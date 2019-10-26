@@ -6,7 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="BHost template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+  
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css')?>"> 
+  
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/main_styles.css')?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/responsive.css')?>">
+  
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/bootstrap-4.1.2/bootstrap.min.css')?>">
 <link href="<?php echo base_url('assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css');?>" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css')?>">
@@ -14,11 +19,20 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/animate.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/elements.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/elements_responsive.css')?>">
+
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/about.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/about_responsive.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/magnific-popup.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/animate.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/slicknav.css')?>">
+
+<script src="<?php echo base_url('assets/js/jquery-3.2.1.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/Chart.min.js')?>"></script>
+<script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/popper.js')?>"></script>
+<script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/bootstrap.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/utils.js')?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+
 </head>
 <body>
 
@@ -60,20 +74,13 @@
 
   <!-- Menu -->
 
-  <div class="menu trans_500">
-    <div class="menu_content d-flex flex-column align-items-center justify-content-center">
-      <div class="menu_nav trans_500">
-        <ul class="text-center">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
+
+  <?php if(current_url() == base_url().'index.php'): ?>
+  
+  
+  
+  <?php else : ?>
   <!-- Home -->
 
   <div class="home">
@@ -89,18 +96,8 @@
     </div>
   </div>
 
+  <?php endif; ?>
   <?php echo $content; ?>
-
-  <!-- Elements -->
-
-  <div class="elements">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Footer -->
 
@@ -181,11 +178,11 @@
             </div>
             <div class="cards">
               <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                <li><a href="#"><img src="images/card_1.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_2.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_3.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_4.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_5.png" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_1.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_2.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_3.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_4.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_5.png') ?>" alt=""></a></li>
               </ul>
             </div>
             <div class="social footer_social">
@@ -235,10 +232,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 </div>
-<script src="<?php echo base_url('assets/js/jquery-3.2.1.min.js')?>"></script>
-<script src="<?php echo base_url('assets/js/Chart.min.js')?>"></script>
-<script src="<?php echo base_url('assets/js/popper.min.js')?>"></script>
-<script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
+
+<!-- <script src="<?php echo base_url('assets/js/popper.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script> -->
 <script src="<?php echo base_url('assets/js/owl.carousel.min.js')?>"></script>
 <script src="<?php echo base_url('assets/js/isotope.pkgd.min.js')?>"></script>
 <script src="<?php echo base_url('assets/js/ajax-form.js')?>"></script>
@@ -261,6 +257,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?php echo base_url('assets/js/main.js')?>"></script>
 <script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/popper.js')?>"></script>
 <script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/bootstrap.min.js')?>"></script>
+
 <script src="<?php echo base_url('assets/plugins/greensock/TweenMax.min.js')?>"></script>
 <script src="<?php echo base_url('assets/plugins/greensock/TimelineMax.min.js')?>"></script>
 <script src="<?php echo base_url('assets/plugins/scrollmagic/ScrollMagic.min.js')?>"></script>
@@ -272,9 +269,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?php echo base_url('assets/plugins/parallax-js-master/parallax.min.js')?>"></script>
 <script src="<?php echo base_url('assets/plugins/jquery-circle-progress-1.2.2/circle-progress.js')?>"></script>
 <script src="<?php echo base_url('assets/js/elements.js')?>"></script>
+
 <script src="<?php echo base_url('assets/js/confer.bundle.js')?>"></script>
 <script src="<?php echo base_url('assets/js/default-assets/active.js')?>"></script>
 <script src="<?php echo base_url('assets/js/jquery.dropdown.js')?>"></script>
 <script src="<?php echo base_url('assets/js/about.js')?>"></script>
+
+<script src="<?php echo base_url('body/js/confer.bundle.js')?>"></script>
+<script src="<?php echo base_url('body/js/default-assets/active.js')?>"></script>
+
 </body>
 </html>
