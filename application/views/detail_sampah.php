@@ -17,8 +17,14 @@
 <div class="container">
 	<div class="row">
 		<div class="detail-title col col-12">
-			<h3><strong>Harga Plastik (Rp.)</strong></h3>
-			<span style="font-size: 1.4rem; padding-right: 10px">Rp. 5.000,00</span><span style="font-size: 1.3rem; color: green"><i class="fa fa-arrow-up"></i>11%</span>
+			<h3><strong>Harga <?php echo $title ?></strong></h3>
+		<?php if ($status['tren'] == 2) : ?>
+			<span style="font-size: 1.4rem; padding-right: 20px; color: black; font-weight: bold">Rp. <?php echo $status['curr_harga'] ?></span><span style="font-size: 1.3rem; color: green"><i class="fa fa-arrow-up"></i><?php echo $status['rate'] ?>%</span>
+		<?php elseif ($status['tren'] == 1) : ?>
+			<span style="font-size: 1.4rem; padding-right: 20px; color: black; font-weight: bold">Rp. <?php echo $status['curr_harga'] ?></span><span style="font-size: 1.3rem; color: blue"><i class="fa fa-exchange"></i><?php echo $status['rate'] ?>%</span>
+		<?php else : ?>
+			<span style="font-size: 1.4rem; padding-right: 20px; color: black; font-weight: bold">Rp. <?php echo $status['curr_harga'] ?></span><span style="font-size: 1.3rem; color: red"><i class="fa fa-arrow-down"></i><?php echo $status['rate'] ?>%</span>
+		<?php endif ?>
 		</div>
 	</div>
 	<div class="row">
@@ -92,6 +98,9 @@
 									labelString: 'Harga (Rp.)',
 									fontSize: 15,
 									fontStyle: 'bold',
+								},
+								ticks: {
+									beginAtZero: true
 								}
 							}]
 						}
