@@ -28,7 +28,7 @@
 
   <header class="header trans_400">
     <div class="header_content d-flex flex-row align-items-center justify-content-start trans_400">
-      <div class="logo"><a href="#">waste<span>data</span></a></div>
+      <div class="logo"><a href="#">rego<span>sampah</span></a></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-10 offset-lg-2">
