@@ -114,52 +114,17 @@
         <div class="row footer_row">
 
           <!-- Footer Column -->
-          <div class="col-xl-3 col-md-6">
-            <div class="footer_title">Hosting Packages</div>
-            <div class="footer_list">
-              <ul>
-                <li><a href="#">Cloud Hosting</a></li>
-                <li><a href="#">Web Hosting</a></li>
-                <li><a href="#">Reseller Hosting</a></li>
-                <li><a href="#">VPS Hosting</a></li>
-                <li><a href="#">Dedicated Servers</a></li>
-                <li><a href="#">Windows Hosting</a></li>
-                <li><a href="#">Linux Servers</a></li>
-              </ul>
-            </div>
+          <div class="col-xl-7 col-md-6">
+            <div class="footer_title">regoSAMPAH dibuat dalam Oh, Plastic! Festival</div>
+              <br><br><br>
+              <p>Oh, Plastic! Festival adalah rangkaian acara yang diadakan oleh Ocean Plastic Prevention Accelerator (SecondMuse Indonesia) untuk meningkatkan kesadaran dan aksi kolaborasi dalam mengatasi permasalahan polusi plastik di Surabaya dan Indonesia. Festival diadakan pada 26-27 Oktober 2019 di Surabaya dan akan berkolaborasi dengan berbagai stakeholder terkait.</p>
+            
           </div>
 
-          <!-- Footer Column -->
-          <div class="col-xl-3 col-md-6">
-            <div class="footer_title">Our Services</div>
-            <div class="footer_list">
-              <ul>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Logo Design</a></li>
-                <li><a href="#">Domains Register</a></li>
-                <li><a href="#">Search Advertising</a></li>
-                <li><a href="#">Email Marketing</a></li>
-              </ul>
-            </div>
-          </div>
 
           <!-- Footer Column -->
-          <div class="col-xl-3 col-md-6">
-            <div class="footer_title">Useful Links</div>
-            <div class="footer_list">
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Footer Column -->
-          <div class="col-xl-3 col-md-6">
-            <div class="logo footer_logo"><a href="#"><span>b</span>Host</a></div>
+          <div class="col-xl-5 col-md-6">
+            <div class="logo footer_logo"><a href="#">rego<span>sampah</span></a></div>
             <div class="contact_info">
               <ul>
                 <li class="d-flex flex-row align-items-start justify-content-start">
