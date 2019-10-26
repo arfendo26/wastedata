@@ -109,7 +109,7 @@
         <div>652-345 3222 11</div>
       </div>
     </div> -->
-    <div class="footer_content">
+    <div class="footer_content" style="padding-top: 100px; padding-bottom: 100px">
       <div class="container">
         <div class="row footer_row">
 
@@ -117,7 +117,8 @@
           <div class="col-xl-7 col-md-6">
             <div class="footer_title">regoSAMPAH dibuat dalam Oh, Plastic! Festival</div>
               <br><br><br>
-              <p>Oh, Plastic! Festival adalah rangkaian acara yang diadakan oleh Ocean Plastic Prevention Accelerator (SecondMuse Indonesia) untuk meningkatkan kesadaran dan aksi kolaborasi dalam mengatasi permasalahan polusi plastik di Surabaya dan Indonesia. Festival diadakan pada 26-27 Oktober 2019 di Surabaya dan akan berkolaborasi dengan berbagai stakeholder terkait.</p>
+              <p>Oh, Plastic! Festival adalah rangkaian acara yang diadakan oleh Ocean Plastic Prevention Accelerator (SecondMuse Indonesia) untuk meningkatkan kesadaran dan aksi kolaborasi dalam mengatasi permasalahan polusi plastik di Surabaya dan Indonesia. Festival diadakan pada 26-27 Oktober 2019 di Surabaya dan akan berkolaborasi dengan berbagai stakeholder terkait. regoSAMPAH sendiri merupakan solusi dari challenge Waste Data Hackathon yang
+              diselenggarakan oleh OPPA (SecondMuse Indonesia) yaitu platform yang dapat menampilkan visualisasi dan prediksi harga sampah plastik.</p>
             
           </div>
 
@@ -128,39 +129,23 @@
             <div class="contact_info">
               <ul>
                 <li class="d-flex flex-row align-items-start justify-content-start">
-                  <div><div>Address</div></div>
-                  <div>1481 Creekside Lane Avila Beach, CA 931</div>
+                  <div><div>Instagram</div></div>
+                  <div>oppaccelerator</div>
                 </li>
                 <li class="d-flex flex-row align-items-start justify-content-start">
-                  <div><div>Phone</div></div>
-                  <div>+53 345 7953 32453</div>
+                  <div>Web<div></div></div>
+                  <div>oppa.id</div>
                 </li>
                 <li class="d-flex flex-row align-items-start justify-content-start">
                   <div><div>E-mail</div></div>
-                  <div>yourmail@gmail.com</div>
+                  <div>oppa@secondmuse.com</div>
                 </li>
               </ul>
             </div>
-            <div class="cards">
-              <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                <li><a href="#"><img src="<?php echo base_url('assets/images/card_1.png') ?>" alt=""></a></li>
-                <li><a href="#"><img src="<?php echo base_url('assets/images/card_2.png') ?>" alt=""></a></li>
-                <li><a href="#"><img src="<?php echo base_url('assets/images/card_3.png') ?>" alt=""></a></li>
-                <li><a href="#"><img src="<?php echo base_url('assets/images/card_4.png') ?>" alt=""></a></li>
-                <li><a href="#"><img src="<?php echo base_url('assets/images/card_5.png') ?>" alt=""></a></li>
-              </ul>
-            </div>
-            <div class="social footer_social">
-              <ul class="d-flex flex-row align-items-center justify-content-start">
-                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              </ul>
-            </div>
-          </div>
+            <br>
+                <a href="#"><img src="<?php echo base_url('assets/images/oppa.png') ?>" style="width:20%; margin-right:20px "  alt=""></a>
+                <a href="#"><img src="<?php echo base_url('assets/images/secondmuse.png') ?>" style="width:20%" alt=""></a>
+             </div>
         </div>
       </div>
     </div>
