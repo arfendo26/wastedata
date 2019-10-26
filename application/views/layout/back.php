@@ -13,6 +13,12 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/animate.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/elements.css')?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/elements_responsive.css')?>">
+<script src="<?php echo base_url('assets/js/jquery-3.2.1.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/Chart.min.js')?>"></script>
+<script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/popper.js')?>"></script>
+<script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/bootstrap.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/utils.js')?>"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 </head>
 <body>
 
@@ -172,11 +178,11 @@
             </div>
             <div class="cards">
               <ul class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                <li><a href="#"><img src="images/card_1.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_2.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_3.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_4.png" alt=""></a></li>
-                <li><a href="#"><img src="images/card_5.png" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_1.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_2.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_3.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_4.png') ?>" alt=""></a></li>
+                <li><a href="#"><img src="<?php echo base_url('assets/images/card_5.png') ?>" alt=""></a></li>
               </ul>
             </div>
             <div class="social footer_social">
@@ -198,10 +204,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
   </footer>
 </div>
-<script src="<?php echo base_url('assets/js/jquery-3.2.1.min.js')?>"></script>
-<script src="<?php echo base_url('assets/js/Chart.min.js')?>"></script>
-<script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/popper.js')?>"></script>
-<script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/bootstrap.min.js')?>"></script>
+
 <script src="<?php echo base_url('assets/plugins/greensock/TweenMax.min.js')?>"></script>
 <script src="<?php echo base_url('assets/plugins/greensock/TimelineMax.min.js')?>"></script>
 <script src="<?php echo base_url('assets/plugins/scrollmagic/ScrollMagic.min.js')?>"></script>
