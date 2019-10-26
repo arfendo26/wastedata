@@ -6,6 +6,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="BHost template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="BHost template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="assets/plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="assets/styles/responsive.css">
+
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/styles/bootstrap-4.1.2/bootstrap.min.css')?>">
 <link href="<?php echo base_url('assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css');?>" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css')?>">
@@ -57,20 +73,336 @@
 
   <!-- Menu -->
 
-  <div class="menu trans_500">
-    <div class="menu_content d-flex flex-column align-items-center justify-content-center">
-      <div class="menu_nav trans_500">
-        <ul class="text-center">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="blog.html">News</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+
+  <?php if(current_url() == base_url().'index.php'): ?>
+  
+  <div class="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="section_title_container text-center">
+            <div class="section_title"><h2>Tren Harga Sampah Saat Ini</h2></div>
+          </div>
+        </div>
+      </div>
+      <div class="row pricing_row">
+        
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                  <defs>
+                    <linearGradient id="grad_1">
+                      <stop offset="0%" stop-color="#487fee" />
+                      <stop offset="100%" stop-color="#b632fa" />
+                    </linearGradient>
+                    <linearGradient id="grad_2">
+                      <stop offset="0%" stop-color="#9cb9f6" />
+                      <stop offset="100%" stop-color="#d691fc" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Turun<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-down"></i> 8%)</span></div>
+              <div class="pricing_price"><span>Rp</span>5.000,00<div>per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                     
+                    </div>
+                    <div><h2 style="color:grey">Sampah Plastik</h2></div>
+                  </li>                
+                </ul>
+              </div>
+            
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Naik<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-up"></i> 4%)</span></div>
+              <div class="pricing_price"><span>Rp</span>7.500,00<div>Per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                    </div>
+                    <div><h2 style="color:grey">Sampah Botol</h2></div>
+                  </li>
+                </ul>
+              </div>
+           
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Naik<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-up"></i> 11%)</span></div>
+              <div class="pricing_price"><span>Rp</span>5.500,00<div>Per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                      
+                    </div>
+                    <div><h2 style="color:grey">Sampah Kertas</h2></div>
+                 
+                </ul>
+              </div>
+             
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row pricing_row">
+        
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                  <defs>
+                    <linearGradient id="grad_1">
+                      <stop offset="0%" stop-color="#487fee" />
+                      <stop offset="100%" stop-color="#b632fa" />
+                    </linearGradient>
+                    <linearGradient id="grad_2">
+                      <stop offset="0%" stop-color="#9cb9f6" />
+                      <stop offset="100%" stop-color="#d691fc" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Turun<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-down"></i> 8%)</span></div>
+              <div class="pricing_price"><span>Rp</span>5.000,00<div>per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                     
+                    </div>
+                    <div><h2 style="color:grey">Sampah Plastik</h2></div>
+                  </li>                
+                </ul>
+              </div>
+            
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Naik<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-up"></i> 4%)</span></div>
+              <div class="pricing_price"><span>Rp</span>7.500,00<div>Per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                    </div>
+                    <div><h2 style="color:grey">Sampah Botol</h2></div>
+                  </li>
+                </ul>
+              </div>
+           
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Naik<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-up"></i> 11%)</span></div>
+              <div class="pricing_price"><span>Rp</span>5.500,00<div>Per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                      
+                    </div>
+                    <div><h2 style="color:grey">Sampah Kertas</h2></div>
+                 
+                </ul>
+              </div>
+             
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row pricing_row">
+        
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                  <defs>
+                    <linearGradient id="grad_1">
+                      <stop offset="0%" stop-color="#487fee" />
+                      <stop offset="100%" stop-color="#b632fa" />
+                    </linearGradient>
+                    <linearGradient id="grad_2">
+                      <stop offset="0%" stop-color="#9cb9f6" />
+                      <stop offset="100%" stop-color="#d691fc" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Turun<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-down"></i> 8%)</span></div>
+              <div class="pricing_price"><span>Rp</span>5.000,00<div>per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                     
+                    </div>
+                    <div><h2 style="color:grey">Sampah Plastik</h2></div>
+                  </li>                
+                </ul>
+              </div>
+            
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Naik<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-up"></i> 4%)</span></div>
+              <div class="pricing_price"><span>Rp</span>7.500,00<div>Per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                    </div>
+                    <div><h2 style="color:grey">Sampah Botol</h2></div>
+                  </li>
+                </ul>
+              </div>
+           
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Item -->
+        <div class="col-lg-4">
+          <div class="pricing_item trans_200">
+            <div class="pricing_item_background trans_200"></div>
+            <div class="pricing_title_container d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_title_background trans_200">
+                <svg class="waves" width="100%" height="100%" viewBox="0 0 1920 218" preserveAspectRatio="none">
+                  <path class="wave_path trans_200" fill="url(#grad_1)" d="M0,0 V210 S500,218 860,193  S1400,125 1920,155 V0 H0"></path>
+                </svg>
+              </div>
+              <div class="pricing_title">Tren Naik<span style="font-size: 1.3rem; color:white"> (<i class="fa fa-arrow-up"></i> 11%)</span></div>
+              <div class="pricing_price"><span>Rp</span>5.500,00<div>Per 1 Kg</div></div>
+            </div>
+            <div class="pricing_content d-flex flex-column align-items-center justify-content-start">
+              <div class="pricing_list">
+                <ul class="d-flex flex-column align-items-center justify-content-start">
+                  <li class="d-flex flex-row align-items-center justify-content-start">
+                    <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
+                      
+                    </div>
+                    <div><h2 style="color:grey">Sampah Kertas</h2></div>
+                 
+                </ul>
+              </div>
+             
+              <div class="button pricing_button trans_200"><a href="#">Selengkapnya</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="pricing_text text-center">
+            <p>Sampah Satu Orang Adalah Harta Orang Lain. Orang yang Berbeda Memiliki Ide Berbeda Tentang Apa yang Bagi Mereka Berharga</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
+  </div>   
+  
+  <?php else : ?>
   <!-- Home -->
 
   <div class="home">
@@ -86,18 +418,8 @@
     </div>
   </div>
 
+  <?php endif; ?>
   <?php echo $content; ?>
-
-  <!-- Elements -->
-
-  <div class="elements">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Footer -->
 
@@ -216,5 +538,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="<?php echo base_url('assets/plugins/parallax-js-master/parallax.min.js')?>"></script>
 <script src="<?php echo base_url('assets/plugins/jquery-circle-progress-1.2.2/circle-progress.js')?>"></script>
 <script src="<?php echo base_url('assets/js/elements.js')?>"></script>
+<script src="<?php echo base_url('body/js/jquery.min.js')?>"></script>
+<script src="<?php echo base_url('body/js/popper.min.js')?>"></script>
+<script src="<?php echo base_url('body/js/bootstrap.min.js')?>"></script>
+<script src="<?php echo base_url('body/js/confer.bundle.js')?>"></script>
+<script src="<?php echo base_url('body/js/default-assets/active.js')?>"></script>
 </body>
 </html>
