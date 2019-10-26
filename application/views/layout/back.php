@@ -80,7 +80,7 @@
     </div>
   </div>
 
-  
+  <?php echo $content; ?>
 
   <!-- Elements -->
 
