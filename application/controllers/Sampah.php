@@ -11,6 +11,7 @@ class Sampah extends CI_Controller {
 				'title' => 'Detil Harga '.$kategori, 
 		);
 		$this->layout->view('detail_sampah',$data);
+		
 	}
 }
 
