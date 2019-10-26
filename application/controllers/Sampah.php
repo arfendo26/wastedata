@@ -11,14 +11,18 @@ class Sampah extends CI_Controller {
 
 	public function index()
 	{
-		$kategori = ucwords($this->input->get('kategori'));
+		$kategori = ucwords($this->input->get('j'));
 		if (empty($kategori)) {
 			redirect(base_url());
 		}
-		$table = '';
+		$table = $kategori;
 		$prediksi_harga = $this->sampah_model->get_prediksi_harga($table);
 		$harga = $this->sampah_model->get_harga($table);
+		$len = count($harga);
 
+		$prev_harga = $harga[$len-2]['harga'];
+		$curr_harga = $harga[$len-1]['harga'];
+		$rate = (($curr_harga-$prev_harga)*100/$prev_harga);
 
 		$prediksi_harga = $this->build_prediksi_harga($harga,$prediksi_harga);
 		$harga = $this->build_harga($harga);
@@ -26,11 +30,21 @@ class Sampah extends CI_Controller {
 				$this->sampah_model->get_tanggal($table),
 				$this->sampah_model->get_prediksi_tanggal($table)
 		);
+		$status = array(
+				'curr_harga' => $curr_harga,
+				'rate' => $rate,
+				'tren' => (($rate > 0)? 2 : (($rate == 0)? 1 : 0)),
+		);
+
+		// var_dump($this->sampah_model->get_tanggal($table));
+		// die;
 		$data = array(
-				'title' => 'Detil Harga Sampah '.$kategori, 
+				'title' => 'Sampah '.$kategori, 
 				'harga' => $harga,
 				'prediksi_harga' => $prediksi_harga,
 				'tanggal' => $tanggal,
+				'status' => $status,
+
 		);
 		$this->layout->view('detail_sampah',$data);
 
@@ -57,7 +71,8 @@ class Sampah extends CI_Controller {
 		for ($j=0; $j < $len_harga-1; $j++) {
 			$data[$i++] = null;
 		}
-
+		// var_dump($harga);
+		// die;
 		$data[$i++] = $harga[$len_harga-1]['harga'];
 		foreach ($prediksi_harga as $key) {
 			$data[$i++] = $key['harga'];
@@ -69,10 +84,10 @@ class Sampah extends CI_Controller {
 		$data = [];
 		$i = 0;
 		foreach ($tanggal as $key) {
-			$data[$i++] = $key['tanggal'];
+			$data[$i++] = output_date($key['tanggal']);
 		}
 		foreach ($prediksi_tanggal as $key) {
-			$data[$i++] = $key['tanggal'];
+			$data[$i++] = output_date($key['tanggal']);
 		}
 		return $data;
 	}

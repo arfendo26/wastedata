@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Class Ion Auth Model
  * @property Ion_auth $ion_auth The Ion_auth library
  */
-class Sampah_model extends CI_Model
+class Beranda_model extends CI_Model
 {
 	public function get_kategori()
 	{
@@ -19,6 +19,8 @@ class Sampah_model extends CI_Model
 										->from('garbage_price gp')
 										->join('garbage_list gl','gl.id = gp.jenis' )
 										->where('gl.nama',$jenis)
+										->order_by('gp.tanggal','DESC')
+										->limit(2,0)
 										->get()
 										->result_array();
 	}
@@ -34,6 +36,8 @@ class Sampah_model extends CI_Model
 										->from('garbage_price gp')
 										->join('garbage_list gl','gl.id = gp.jenis')
 										->where('gl.nama',$jenis)
+										->order_by('gp.tanggal','DESC')
+										->limit(2,0)
 										->get()
 										->result_array();
 	}
@@ -42,6 +46,4 @@ class Sampah_model extends CI_Model
 		return [['tanggal'=>'7 Okt'],['tanggal'=> '8 Okt'],['tanggal'=> '9 Okt'],['tanggal'=> '10 Okt']];
 		return $this->db->select('harga')->get($table)->result_array();
 	}
-
-
 }
