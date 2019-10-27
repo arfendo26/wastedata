@@ -83,18 +83,7 @@
   <?php else : ?>
   <!-- Home -->
 
-  <div class="home">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="home_content">
-            <div class="home_image"><img src="<?php echo base_url('assets/images/elements.png') ?>" alt=""></div>
-            <div class="home_title"><?php echo isset($title)? $title : 'Lulus Tepat Waktu! Aamiin' ?></div>    
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
   <?php endif; ?>
   <?php echo $content; ?>
@@ -227,6 +216,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 <script src="<?php echo base_url('body/js/confer.bundle.js')?>"></script>
 <script src="<?php echo base_url('body/js/default-assets/active.js')?>"></script>
+<script src="<?php echo base_url('body/js/custom.js')?>"></script>
 
 </body>
 </html>

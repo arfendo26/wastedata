@@ -1,3 +1,15 @@
+<div class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="home_content">
+            <div class="home_image"><img src="<?php echo base_url('assets/images/elements.png')?>" alt=""></div>
+            <div class="home_title"><?php echo isset($title)? $title : 'Lulus Tepat Waktu! Aamiin' ?></div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="content">
 
 	<!-- about -->
