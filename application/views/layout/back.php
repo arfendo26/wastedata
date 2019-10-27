@@ -32,7 +32,17 @@
 <script src="<?php echo base_url('assets/styles/bootstrap-4.1.2/bootstrap.min.js')?>"></script>
 <script src="<?php echo base_url('assets/js/utils.js')?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-
+<style type="text/css">
+  *{
+    /*border:1px dashed red;*/
+  }
+  .home {
+     height: auto !important; 
+  }
+  .main_nav {
+       padding-right: 2%; 
+  }
+</style>
 </head>
 <body>
 
@@ -42,14 +52,14 @@
 
   <header class="header trans_400">
     <div class="header_content d-flex flex-row align-items-center justify-content-start trans_400">
-      <div class="logo"><a href="#">rego<span>sampah</span></a></div>
+      <div class="logo" style ="z-index:100"><a href="<?php echo base_url() ?>" >rego<span>sampah</span></a></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-10 offset-lg-2">
-            <nav class="main_nav">
-              <ul class="d-flex flex-row align-items-center justify-content-start">
-                <li><a href="<?php echo base_url() ?>">Beranda</a></li>
-                <li><a href="<?php echo base_url('about')?>">Tentang Kami</a></li>
+            <nav class="main_nav ">
+              <ul class="d-flex flex-row align-items-center justify-content-start pull-right">
+                <!-- <li><a href="">Beranda</a></li> -->
+                <li><a href="<?php echo base_url('about')?>"><strong>Tentang Kami</strong></a></li>
               </ul>
             </nav>
           </div>
@@ -58,21 +68,34 @@
       <div class="header_right d-flex flex-row align-items-center justify-content-start">
 
         <!-- Header Links -->
-        <div class="header_links">
+        <!-- <div class="header_links">
           <ul class="d-flex flex-row align-items-center justify-content-start">
-            <li><a href="#test-form" class="login popup-with-form">
-                                    <span>Masuk</span>
-                                </a></li>
-
+            <li>
+              <a href="#test-form" class="login popup-with-form"><span>Masuk</span></a>
+            </li>
           </ul>
-        </div>
+        </div> -->
         <!-- Hamburger -->
         <div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
       </div>  
     </div>
   </header>
 
-  <!-- Menu -->
+  <<!-- Menu -->
+
+  <div class="menu trans_500">
+    <div class="menu_content d-flex flex-column align-items-center justify-content-center">
+      <div class="menu_nav trans_500">
+        <ul class="text-center">
+          <li><a href="<?php echo base_url('about')?>">Tentang Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home -->
+
 
 
 
@@ -125,7 +148,7 @@
 
           <!-- Footer Column -->
           <div class="col-xl-5 col-md-6">
-            <div class="logo footer_logo"><a href="#">rego<span>sampah</span></a></div>
+            <div class="logo footer_logo"><a>rego<span>sampah</span></a></div>
             <div class="contact_info">
               <ul>
                 <li class="d-flex flex-row align-items-start justify-content-start">
