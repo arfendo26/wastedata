@@ -64,11 +64,11 @@
                 </svg>
               </div>
             <?php if ($key['tren'] == 2) : ?>
-              <div class="pricing_title">Tren Naik<span style="color:white"> (<i class="fa fa-arrow-up"></i> <?php echo $key['rate'] ?>)</span></div>
+              <div class="pricing_title">Tren Naik<span style="color:white"> ( <i class="fa fa-arrow-up"></i> <?php echo round($key['rate'],2) ?> % )</span></div>
             <?php elseif ($key['tren'] == 1) : ?>
-              <div class="pricing_title">Tren Normal<span style="color:white"> (<i class="fa fa-exchange"></i> <?php echo $key['rate'] ?>)</span></div>
+              <div class="pricing_title">Tren Normal<span style="color:white"> ( <i class="fa fa-exchange"></i> <?php echo round($key['rate'],2) ?> % )</span></div>
             <?php else : ?>
-              <div class="pricing_title">Tren Turun<span style="color:white"> (<i class="fa fa-arrow-down"></i> <?php echo $key['rate'] ?>)</span></div>
+              <div class="pricing_title">Tren Turun<span style="color:white"> ( <i class="fa fa-arrow-down"></i> <?php echo round($key['rate'],2) ?> % )</span></div>
             <?php endif; ?>
               <div class="pricing_price"><span>Rp </span><?php echo $key['harga'] ?><div>per 1 Kg</div></div>
             </div>
@@ -77,9 +77,8 @@
                 <ul class="d-flex flex-column align-items-center justify-content-start">
                   <li class="d-flex flex-row align-items-center justify-content-start">
                     <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
-                     
                     </div>
-                    <div><center><h3 style="color:grey">Sampah <?php echo $key['jenis'] ?></h3></center></div>
+                    <div><center><h3 style="color:grey"><?php echo $key['jenis'] ?></h3></center></div>
                   </li>                
                 </ul>
               </div>

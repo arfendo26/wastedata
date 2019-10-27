@@ -1,3 +1,11 @@
+<style type="text/css">
+	.team_social ul li a i {
+	    font-size: 60px !important;
+	}
+	.team_social ul li a: hover {
+	    color: red !important ;
+	}
+</style>
 <div class="content">
 
 	<!-- about -->

@@ -36,6 +36,10 @@ class Sampah extends CI_Controller {
 				'tren' => (($rate > 0)? 2 : (($rate == 0)? 1 : 0)),
 		);
 
+		$detail_predict = $this->sampah_model->get_detail_predict($table);
+		$detail_tinggi_rendah = $this->sampah_model->get_harga_tinggi_rendah($table);
+
+
 		// var_dump($this->sampah_model->get_tanggal($table));
 		// die;
 		$data = array(
@@ -44,6 +48,12 @@ class Sampah extends CI_Controller {
 				'prediksi_harga' => $prediksi_harga,
 				'tanggal' => $tanggal,
 				'status' => $status,
+				'mse' => $detail_predict['mse'],
+				'mae' => $detail_predict['mae'],
+				'r2' => $detail_predict['r2'],
+				'harga_tertinggi' => $detail_tinggi_rendah['harga_tertinggi'],
+				'harga_terendah' => $detail_tinggi_rendah['harga_terendah'],
+
 
 		);
 		$this->layout->view('detail_sampah',$data);
@@ -88,6 +98,14 @@ class Sampah extends CI_Controller {
 		}
 		foreach ($prediksi_tanggal as $key) {
 			$data[$i++] = output_date($key['tanggal']);
+		}
+
+		for ($k=0; $k < $i ; $k++) { 
+			$temp = $data[$k];
+			$temp = explode(' ',$temp);
+			$len = count($temp);
+			$temp = $temp[$len-2].' '.$temp[$len-1];
+			$data[$k] = $temp;
 		}
 		return $data;
 	}
