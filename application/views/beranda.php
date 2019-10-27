@@ -21,7 +21,7 @@
           <div class="col">
             <div class="home_content text-center">
               <div class="home_icon ml-auto mr-auto d-flex flex-column align-items-center justify-content-center"><div><img src="images/daurulang.png" alt="https://www.flaticon.com/authors/srip"></div></div>
-              <div class="home_title">Pantau Terus Harga Sampah! Cak</div>
+              <div class="home_title">Pantau Terus Harga Sampah, Cak !</div>
           
             </div>
           </div>
