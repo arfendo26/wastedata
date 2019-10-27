@@ -1,9 +1,9 @@
 <style type="text/css">
   .pricing_row .pricing_item{
-    margin-bottom: 40px !important;
+    margin-bottom: 30px !important;
   }
   .pricing{
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .home_content{
     height:350px;
@@ -21,7 +21,7 @@
           <div class="col">
             <div class="home_content text-center">
               <div class="home_icon ml-auto mr-auto d-flex flex-column align-items-center justify-content-center"><div><img src="images/daurulang.png" alt="https://www.flaticon.com/authors/srip"></div></div>
-              <div class="home_title">Choose the perfect hosting</div>
+              <div class="home_title">Pantau Terus Harga Sampah! Cak</div>
           
             </div>
           </div>
@@ -78,7 +78,7 @@
                   <li class="d-flex flex-row align-items-center justify-content-start">
                     <div class="pricing_icon d-flex flex-column align-items-center justify-content-center">
                     </div>
-                    <div><center><h3 style="color:grey"><?php echo $key['jenis'] ?></h3></center></div>
+                    <div><center><h3><?php echo $key['jenis'] ?></h3></center></div>
                   </li>                
                 </ul>
               </div>

@@ -15,7 +15,7 @@ mydb.commit()
 
 
 bank = 1
-j = 10
+j = 18
 
 for jenis in range(1,j+1):
     mydb = mysql.connector.connect(
