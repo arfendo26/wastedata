@@ -17,7 +17,7 @@
 					<div class="about_content">
 						<div class="section_title"><h2>Apa itu regoSAMPAH?</h2></div>
 						<div class="about_text">
-							<p>RegoSampah merupakan sebuah website yang menyediakan harga sampah plastik, baik itu harga historis, saat ini, maupun prediksi harga untuk bulan depan di Kota Surabaya. Harga sampah plastik yang tersedia akan selalu diperbarui setiap bulannya.</p>
+							<p>regoSAMPAH merupakan sebuah website yang menyediakan harga sampah plastik, baik itu harga historis, saat ini, maupun prediksi harga untuk bulan depan di Kota Surabaya. Harga sampah plastik yang tersedia akan selalu diperbarui setiap bulannya.</p>
 						</div>
 		
 					</div>
@@ -34,7 +34,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title_container text-center">
-						<div class="section_title"><h2>Tim RegoSampah regosampah Rego Sampah</h2></div>
+						<div class="section_title"><h2>Tim regoSAMPAH</h2></div>
 						<div class="team_text">
 							<p>Website ini disusun oleh sekelompok mahasiswa tingkat akhir yang berharap #LulusTepatWaktuAamiin</p>
 						</div>
