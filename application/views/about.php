@@ -6,6 +6,34 @@
 	    color: red !important ;
 	}
 </style>
+<!-- 
+<div class="home">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="home_content">
+          <div class="home_image"><img src="<?php echo base_url('assets/images/elements.png') ?>" alt=""></div>
+          <div class="home_title"><?php echo isset($title)? $title : 'Lulus Tepat Waktu! Aamiin' ?></div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="home_content">
+    <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/Default_header.jpg" data-speed="1"></div>
+    <div class="home_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="home_content">
+          <div class="home_title"><?php echo isset($title)? $title : 'Lulus Tepat Waktu! Aamiin' ?></div>    
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="content">
 
 	<!-- about -->

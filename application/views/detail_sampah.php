@@ -70,6 +70,19 @@
 		}
 	}
 </style>
+<div class="home">
+	<div class="container">
+	  <div class="row">
+	    <div class="col">
+	      <div class="home_content">
+	        <div class="home_image"><img src="<?php echo base_url('assets/images/botolllll.png') ?>" alt=""></div>
+	        <div class="home_title"><?php echo isset($title)? $title : 'Lulus Tepat Waktu! Aamiin' ?></div>    
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
 <div class="container" style="margin-top: 50px; margin-bottom: 100px">
 	<div class="row">
 		<div class="detail-title col col-12">
