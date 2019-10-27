@@ -5,7 +5,32 @@
   .pricing{
     margin-top: 40px;
   }
+  .home_content{
+    height:350px;
+    padding-top: 135px;
+  }
+
 </style>
+  <!-- Home -->
+
+  <div class="home_content">
+    <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/LandingPage_header.jpg" data-speed="1"></div>
+    <div class="home_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="home_content text-center">
+              <div class="home_icon ml-auto mr-auto d-flex flex-column align-items-center justify-content-center"><div><img src="images/daurulang.png" alt="https://www.flaticon.com/authors/srip"></div></div>
+              <div class="home_title">Choose the perfect hosting</div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
  <div class="pricing">
     <div class="container">
       <div class="row">

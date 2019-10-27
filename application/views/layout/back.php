@@ -77,8 +77,8 @@
 
 
   <?php if(current_url() == base_url().'index.php'): ?>
-  
-  
+        
+        
   
   <?php else : ?>
   <!-- Home -->
@@ -97,6 +97,7 @@
   </div>
 
   <?php endif; ?>
+  
   <?php echo $content; ?>
 
   <!-- Footer -->
